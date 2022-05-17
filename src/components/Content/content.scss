@@ -1,0 +1,105 @@
+.titleContainer {
+  margin-top: calc(20vh - 100px);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  align-items: center;
+
+  .title {
+    color: white;
+    font-size: 56px;
+  }
+
+  .text {
+    color: white;
+    font-size: 28px;
+  }
+}
+
+.content {
+  margin: calc(40vh - 150px) 10vw 0 65%;
+  color: white;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+
+  @media screen and (max-width : 1439px) {
+    margin: 30px 25% 0 25%;
+  }
+
+  @media screen and (max-width : 725px) {
+    margin: 30px calc(10% - 10px) 0 10%;
+  }
+
+  .itemContent {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #2b303920;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #b1b2b4;
+    cursor: pointer;
+    font-family: 'museoSansCyrl100';
+
+    @media screen and (max-width : 1439px) {
+      background-color: #1a1d2380;
+    }
+
+    &:hover {
+      background: linear-gradient(to bottom right, transparent, #2b3039a0);
+      border: 1px solid transparent;
+      border-image: linear-gradient(to bottom right, #545960 , transparent);
+      -moz-border-image: -moz-linear-gradient(top left, #545960 , transparent);
+      -webkit-border-image: -webkit-linear-gradient(bottom right, #545960 , transparent);
+      border-image-slice: 1;
+      border-top: none;
+      border-left: none;
+    }
+
+    .topText {
+      margin: 25px 0 10px;
+    }
+
+    .number {
+      font-size: 48px;
+      color: white;
+      font-family: 'museoSansCyrl700';
+    }
+
+    .bottomText {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.customBtn {
+  margin: 10px 0 0 calc(50% - 90px);
+  position: relative;
+  background-color: transparent;
+  border: none;
+  width: 180px;
+  height: 33px;
+  font-family: 'museoSansCyrl100';
+  cursor: pointer;
+
+  .imgBtn {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 211px;
+    height: 62px;
+  }
+
+  .textBtn {
+    color: white;
+    font-size: 16x;
+  }
+
+  @media screen and (min-width : 1440px) {
+    margin: 0;
+    position: absolute;
+    right: 70vw;
+    bottom: 38vh;
+  }
+}

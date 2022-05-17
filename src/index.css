@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "museoSansCyrl100"; 
+  src: url("./fonts/Museo\ Sans\ Cyrl\ 100.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  } 
+
+@font-face {
+  font-family: "museoSansCyrl300"; 
+  src: url("./fonts/Museo\ Sans\ Cyrl\ 300.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  } 
+
+@font-face {
+  font-family: "museoSansCyrl700"; 
+  src: url("./fonts/Museo\ Sans\ Cyrl\ 700.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 
